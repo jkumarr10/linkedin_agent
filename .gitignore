@@ -175,3 +175,6 @@ cython_debug/
 
 # Linkedin Keys
 linkedin keys.docx
+
+# app_autogen
+app_autogen/
