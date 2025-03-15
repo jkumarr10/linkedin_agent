@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "linkedin-agent"
+version = "0.1.0"
+description = "Build an agent that can post on LinkedIn weekly"
+authors = ["jkumarr10 <jitthenkumarr29@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.14"
+autogen-core = "^0.4.8.1"
+autogen-ext = {extras = ["azure", "openai"], version = "^0.4.8.1"}
+autogen-agentchat = "^0.4.8.1"
+python-dotenv = "^1.0.1"
+ag2 = {extras = ["openai"], version = "^0.8.1"}
+openai-agents = "^0.0.3"
+
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
