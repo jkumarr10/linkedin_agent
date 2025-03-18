@@ -1,8 +1,7 @@
 
 import os
 from dotenv import load_dotenv
-from agents import Agent, Runner, function_tool, RunContextWrapper
-from dataclasses import dataclass
+from agents import Agent, Runner, function_tool
 
 from linkedin_tools import Linkedin
 
@@ -110,7 +109,7 @@ if __name__ == "__main__":
         # Create a combined input with conversation history
         if conversation_history:
             combined_input = f"Previous Conversation:\n{conversation_history}\n\nCurrent Request: {user_input}"
-            print(f"combined input: {combined_input}")
+            
         else:
             combined_input = user_input
             

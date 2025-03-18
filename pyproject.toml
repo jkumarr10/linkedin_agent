@@ -13,6 +13,7 @@ autogen-agentchat = "^0.4.8.1"
 python-dotenv = "^1.0.1"
 ag2 = {extras = ["openai"], version = "^0.8.1"}
 openai-agents = "^0.0.3"
+streamlit = "^1.43.2"
 
 
 

@@ -9,20 +9,15 @@ load_dotenv()
 
 class Linkedin:
     
-    def __init__(self, user: str = "jitthen"):
+    def __init__(self):
         
-        if user.lower() == "jitthen".lower():
-            # Get Linkedin Access Token from .env file
-            access_token = os.getenv("LINKEDIN_ACCESS_TOKEN")
-            linkedin_author = os.getenv("LINKEDIN_AUTHOR")
-            
-            self.access_token = access_token
-            self.linkedin_author = linkedin_author
+        # Get Linkedin Access Token from .env file
+        access_token = os.getenv("LINKEDIN_ACCESS_TOKEN")
+        linkedin_author = os.getenv("LINKEDIN_AUTHOR")
         
-        else:
-            logging.info(f"Enter User's Name")
-
-
+        self.access_token = access_token
+        self.linkedin_author = linkedin_author
+        
     def get_user_info(self):
         
         
