@@ -11,10 +11,6 @@ load_dotenv()
 # Initialize Linkedin Class
 linkedin = Linkedin()
 
-# Get Linkedin Access Token and Author ID from environment variables
-access_token = os.getenv("LINKEDIN_ACCESS_TOKEN")
-linkedin_author = os.getenv("LINKEDIN_AUTHOR")
-
 
 @function_tool
 def linkedin_poster_tool(generated_content: str):
@@ -88,6 +84,7 @@ def orchestrator():
     return orchestration_agent
 
 
+# Quick Test For Orchestrator Agent
 if __name__ == "__main__":
     orchestrator_variable = orchestrator()
     

@@ -1,7 +1,7 @@
 import streamlit as st
 import asyncio
 import nest_asyncio
-from agent import orchestrator
+from agents_openai import orchestrator
 from agents import Runner
 
 # Apply nest_asyncio to allow nested event loops
