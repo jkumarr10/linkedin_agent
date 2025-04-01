@@ -54,7 +54,7 @@ cd linkedin_agent
 2. Install dependencies:
 
 ```
-poetry Install
+poetry install
 
 ```
 
